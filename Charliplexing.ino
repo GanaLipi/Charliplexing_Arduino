@@ -1,12 +1,19 @@
+/* 
+Arduino Mega Board is used to run the charliplexed LED's.
+Charliplexed LED's was in Numerical form not as 4x7 pattern.
+*/
+
+// initializing the 6 pins and required variables.
 int p1=32,p2=33,p3=34,p4=35,p5=36,p6=37;
 int i,j,k;
+
 void setup() {
   // put your setup code here, to run once:
 
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+// used for loops and conditions to blink the required LED's.
 for(i=0;i<10;i++)
  {
   if(i==0)
@@ -803,11 +810,11 @@ void o9()
 
 
 
-//pins defination
+//pins definations. LED's connections are made between the Ports which are output in both the directions.
 
 void p78()
 {
-pinMode(p1,OUTPUT);
+pinMode(p1,OUTPUT);  // LED's connected b/w P1 and P2 in both the directions. similarly to other pins too. 
 pinMode(p2,OUTPUT);
 pinMode(p3,INPUT);
 pinMode(p4,INPUT);
